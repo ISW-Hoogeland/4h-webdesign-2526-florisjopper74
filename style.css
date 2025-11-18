@@ -46,7 +46,7 @@ background-color: var(--kleur1);
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 250px;
       padding: 0%;
       margin: auto;
    }
@@ -77,13 +77,23 @@ grid-area: main;
 
 background-color: var(--kleur3); 
 
-} 
+.galerij{
+  display: flex;
+  gap: 200px;
+  height: 250px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+
+
 
 footer{ 
 
 grid-area: footer; 
 
-background-color: var(--kleur4); 
+background-color: var(--kleur4);
 
 } 
 
