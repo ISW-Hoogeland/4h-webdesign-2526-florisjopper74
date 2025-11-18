@@ -1,32 +1,92 @@
-:root{
-   --kleur1:#384b57;
---kleur2:#456879;
---kleur3:#52869b;
---kleur4:#5fa3bd;
+ :root{ 
 
+   --kleur1:#384b57; 
+
+--kleur2:#456879; 
+
+--kleur3:#52869b; 
+
+--kleur4:#5fa3bd; 
+
+ 
+
+} 
+
+body{ 
+
+display: grid; 
+
+grid-template-areas: 
+
+"header" 
+
+"nav" 
+
+"main" 
+
+"footer"; 
+
+grid-template-rows: 120px 30px 1fr 60px; 
+
+} 
+
+header{ 
+
+grid-area:header; 
+
+background-color: var(--kleur1); 
 }
-body{
-display: grid;
-grid-template-areas:
-"header"
-"nav"
-"main"
-"footer";
-grid-template-rows: 120px 60px 1fr 60px;
-}
-header{
-grid-area:header;
-background-color: var(--kleur1);
-}
-nav{
-grid-area: nav;
-background-color: var(--kleur2);
-}
-main{
-grid-area: main;
-background-color: var(--kleur3);
-}
-footer{
-grid-area: footer;
-background-color: var(--kleur4);
-}
+ nav {
+   background: var(--primary);
+   padding: 10px 0;
+
+} 
+
+   nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0%;
+      margin: auto;
+   }
+ nav a {
+   text-decoration: none;
+   color: var(--light);
+   padding: 10px 15px;
+   border-radius: 6px;
+ }
+ nav a :hover {
+   background: var(--accent);
+   color: black;
+ }
+ {
+
+ }
+nav{ 
+
+grid-area: nav; 
+
+background-color: var(--kleur2); 
+
+} 
+
+main{ 
+
+grid-area: main; 
+
+background-color: var(--kleur3); 
+
+} 
+
+footer{ 
+
+grid-area: footer; 
+
+background-color: var(--kleur4); 
+
+} 
+
+ 
+
+ 
